@@ -76,7 +76,7 @@ public class VentanaPrincipal {
 		// this.inicializarModelo();
 		final Juego juego = InicializadorJuego.juegoInicializado();
 		AdministradorDeVistas admin = new AdministradorDeVistas(juego, gameLoop);
-		juego.agregarObservador(admin);		
+		juego.agregarObservador(admin);
 		this.gameLoop.agregar(juego);
 		panel.addMouseListener(new MouseAdapter() {
 
@@ -131,7 +131,7 @@ public class VentanaPrincipal {
 	private JPanel addSuperficiePanel() {
 		JPanel panel = new SuperficiePanel();
 		panel.setBackground(new Color(0, 0, 0));
-		
+
 		// tamaño fondo
 
 		panel.setBounds(0, 0, 534, 510);
