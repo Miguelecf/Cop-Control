@@ -1,6 +1,5 @@
 package pista;
 
-
 import avion.AvionComputarizado;
 import avion.AvionPesado;
 import avion.AvionSimple;
@@ -8,18 +7,17 @@ import avion.Helicoptero;
 
 import copControl.Posicion;
 
-public class PistaSimple extends Pista{
+public class PistaSimple extends Pista {
 
-	
 	public PistaSimple(Posicion posicionEntrada) throws PosicionesEntradaVaciaException {
-		super (posicionEntrada);
-		this.radioAterrizaje=15;
-		this.posicionEntrada= posicionEntrada;		
-				
+		super(posicionEntrada);
+		this.radioAterrizaje = 15;
+		this.posicionEntrada = posicionEntrada;
+
 	}
 
 	@Override
-	public	boolean puedeAterrizar(AvionSimple avionSimple) {
+	public boolean puedeAterrizar(AvionSimple avionSimple) {
 		return true;
 	}
 
@@ -43,13 +41,12 @@ public class PistaSimple extends Pista{
 
 	@Override
 	public int getX() {
-		return (int)getPosicionEntrada().getCoordenadaX();
+		return (int) getPosicionEntrada().getCoordenadaX();
 	}
 
 	@Override
 	public int getY() {
-		return (int)getPosicionEntrada().getCoordenadaY();
+		return (int) getPosicionEntrada().getCoordenadaY();
 	}
-	
 
 }
